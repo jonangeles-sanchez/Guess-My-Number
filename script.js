@@ -28,7 +28,9 @@ document.querySelector('.again').addEventListener('click', function () {
   document.querySelector('.number').style.width = '15rem';
   document.querySelector('.message').textContent = 'Start guessing...';
   document.querySelector('.guess').value = '';
-  document.querySelector('.label-highscore').textContent = '🥇 Highscore: ';
+  document.querySelector(
+    '.label-highscore'
+  ).textContent = `🥇 Highscore: ${highscore}`;
   document.querySelector('.highscore').textContent = score;
   /*
     //When the 'Again!' button is pressed, the integrated reload function will reload the page, therefore restarting the game.
